@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+header{
+    background-color: #1261A0;
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px 2px black;
+}
+#circ{
+    background-color: #3895d3;
+    height: 80vh;
+    width: 80vh;
+    border-radius: 20%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+}
+#sqr{
+    background-color: #3895d3;
+    height: 10em;
+    width: 10em;
+    position: absolute;
+    left: 10vw;
+    top: -20%;
+    border-radius: 20%;
+
+}
+#ssqr{
+    width: 120vw;
+    height: 2px;
+    transform: rotateX(30deg);
+    position: absolute;
+    bottom: 0px;
+}
+#ht{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: table;
+    display: grid;
+    place-items: center;
+}
+#ht h1,p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+#ht h1{
+    border-bottom: 2px solid white;
+    margin-bottom: 5px;
+    font-size: 3vw;
+}
+#ht p{
+    font-size: 2vw;
+}
+@media only screen and (max-width: 500px) {
+    #ht h1{
+        font-size: 5vw;
+    }
+    #ht p{
+        font-size: 4vw;
+    }
+}
+//scroll
+#sch{
+    //background-color: #08c708;
+    width: 100vw;
+    height: 40vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+#sch::-webkit-scrollbar {
+    width: 10px;
+  }
+/* Track */
+#sch::-webkit-scrollbar-track {
+    background: white;
+} 
+  
+/* Handle */
+#sch::-webkit-scrollbar-thumb {
+    background: #888;
+}
+#sch div{
+    height: 70%;
+    width: 500px;
+    background-color: white;
+    box-shadow: 0 0 10px 1px darkgray;
+    margin-left: 50px;
+    margin-right: 50px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    display: grid;
+    place-content: center;
+
+}
+
+#gts{
+    position: relative;
+    width: 100vw;
+    height: 40vh;
+    display: grid;
+    place-content: center;
+    box-shadow: 0 0 10px 1px darkgray;
+}
+
+#gts h1{
+    width: 25vw;
+    height: 100px;
+    background-color: blue;
+    display: grid;
+    place-content: center;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer{
+    width: 100vw;
+    height: 20vh;
+    background-color: gray;
+    z-index: 100;
+}

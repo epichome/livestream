@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="{% static 'home/style.css' %}">
+  <script src="{% static 'home/main.js' %}"></script>
+</head>
+<body onload="a_back()">
+  <div id="a-full"></div>
+
+  <video
+  id="my-video"
+  class="video-js"
+  controls
+  preload="auto"
+  width="950"
+  height="500"
+  poster="MY_VIDEO_POSTER.jpg"
+  data-setup="{}"
+>
+  <source src="http://80.217.110.64/tmp_hls/stream/index.m3u8" type="application/x-mpegURL"/>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a
+    web browser that
+    <a href="https://videojs.com/html5-video-support/" target="_blank"
+      >supports HTML5 video</a
+    >
+  </p>
+</video>
+
+<script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
+   
+</body>
+</html>
+
+
+
