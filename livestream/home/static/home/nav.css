@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,7 +17,7 @@ header {
   position: relative;
   overflow: hidden;
   -webkit-box-shadow: 0 0 10px 2px black;
-          box-shadow: 0 0 10px 2px black;
+  box-shadow: 0 0 10px 2px black;
 }
 
 #circ {
@@ -29,7 +29,7 @@ header {
   right: 0;
   top: 0;
   -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
 }
 
 #sqr {
@@ -46,7 +46,7 @@ header {
   width: 120vw;
   height: 2px;
   -webkit-transform: rotateX(30deg);
-          transform: rotateX(30deg);
+  transform: rotateX(30deg);
   position: absolute;
   bottom: 0px;
 }
@@ -56,7 +56,7 @@ header {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   display: table;
   display: -ms-grid;
   display: grid;
@@ -97,8 +97,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #sch::-webkit-scrollbar {
@@ -120,11 +120,11 @@ header {
   width: 500px;
   background-color: white;
   -webkit-box-shadow: 0 0 10px 1px darkgray;
-          box-shadow: 0 0 10px 1px darkgray;
+  box-shadow: 0 0 10px 1px darkgray;
   margin-left: 50px;
   margin-right: 50px;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   border-radius: 20px;
   display: -ms-grid;
   display: grid;
@@ -139,12 +139,12 @@ header {
   display: grid;
   place-content: center;
   -webkit-box-shadow: 0 0 10px 1px darkgray;
-          box-shadow: 0 0 10px 1px darkgray;
+  box-shadow: 0 0 10px 1px darkgray;
 }
 
 #gts h1 {
-  width: 25vw;
-  height: 100px;
+  width: 30vw;
+  height: 15vh;
   background-color: blue;
   display: -ms-grid;
   display: grid;
@@ -152,12 +152,30 @@ header {
   border-radius: 5px;
   color: white;
   font-family: 'Roboto', sans-serif;
+  font-size: 2.5vw;
+  place-items: center;
 }
 
 footer {
   width: 100vw;
-  height: 20vh;
-  background-color: gray;
+  height: 15vh;
+  background-color: #2d85c0;
   z-index: 100;
+  padding-left: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 /*# sourceMappingURL=nav.css.map */
